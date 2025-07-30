@@ -14,7 +14,8 @@ namespace SignalR.DataAccessLayer.Concrete
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Server=DESKTOP-R7AR1ND;initial Catalog=SignalRDb;integrated Security=true");
+            optionsBuilder.UseSqlServer("Data Source=SQL8010.site4now.net;Initial Catalog=db_a8c41b_akoksoy;User Id=db_a8c41b_akoksoy_admin;Password=Ayse@k0ks0y");
+            //optionsBuilder.UseSqlServer("Server=DESKTOP-R7AR1ND;initial Catalog=SignalRDb;integrated Security=true");
         }
         public DbSet<About> Abouts { get; set; }
         public DbSet<Booking> Bookings { get; set; }
